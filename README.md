@@ -1,6 +1,29 @@
 # ElixirMq
 
-This is a project built with Elixir that uses Dynamo to serve web requests.
+This is a message queue application built with Elixir that uses Dynamo to serve web requests.
+
+## Usage
+
+1. Make sure you have Elixir installed.
+2. `bash ./run-production`
+
+This, by default, will run the application in port 8888.  Therefore you will want to send requests to `localhost:8888`
+
+## API
+
+There are only two APIs:
+
+1. `GET /`
+
+Get a message off the queue.
+
+Default reply when nothing is in the queue: `no_element_in_queue`
+
+2. `POST /`
+
+Post a message to the queue.
+
+Default reply: `ok`
 
 Resources:
 
