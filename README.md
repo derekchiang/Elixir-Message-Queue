@@ -5,7 +5,7 @@ This is a message queue application built with Elixir that uses Dynamo to serve 
 ## Usage
 
 1. Make sure you have Elixir installed.
-2. `bash ./run-production`
+2. `bash ./run-production.sh`
 
 This, by default, will run the application in port 8888.  Therefore you will want to send requests to `localhost:8888`
 
