@@ -14,7 +14,7 @@ defmodule Queue.Server do
   end
 
   def handle_call(:pop, _from, []) do
-    { :reply, :no_element_on_queue, [] }
+    { :reply, :no_element_in_queue, [] }
   end
 
   def handle_cast({ :push, data }, queue) do
